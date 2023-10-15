@@ -1,9 +1,13 @@
+import Banner from "../Banner/Banner";
+import CategoryList from "../CategoryList/CategoryList";
+import FeaturedJobs from "../FeaturedJobs/FeaturedJobs";
+
 const Home = () => {
   return (
     <div>
-      <h1 className="text-center text-5xl font-bold">
-        Hello this is Home component
-      </h1>
+      <Banner></Banner>
+      <CategoryList></CategoryList>
+      <FeaturedJobs></FeaturedJobs>
     </div>
   );
 };
