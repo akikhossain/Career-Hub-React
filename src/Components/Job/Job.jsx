@@ -1,8 +1,10 @@
 import { MdLocationPin } from "react-icons/md";
 import { HiCurrencyDollar } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const Job = ({ job }) => {
   const {
+    id,
     logo,
     job_title,
     company_name,
@@ -36,9 +38,11 @@ const Job = ({ job }) => {
             {salary}
           </p>
         </div>
-        <button className="text-left bg-purple-600 text-white px-4 py-2 w-[130px] rounded">
-          View Details
-        </button>
+        <Link to={`/job/${id}`}>
+          <button className="text-left bg-purple-600 text-white px-4 py-2 w-[130px] rounded">
+            View Details
+          </button>
+        </Link>
       </div>
     </div>
   );
