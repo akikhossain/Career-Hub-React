@@ -1,3 +1,6 @@
+import { MdLocationPin } from "react-icons/md";
+import { HiCurrencyDollar } from "react-icons/hi";
+
 const Job = ({ job }) => {
   const {
     logo,
@@ -25,8 +28,13 @@ const Job = ({ job }) => {
           </div>
         </div>
         <div className="flex">
-          <p>{location}</p>
-          <p>Salary: {salary}</p>
+          <p className="inline-flex items-center">
+            <MdLocationPin className="mr-2"></MdLocationPin> {location}
+          </p>
+          <p className="inline-flex items-center">
+            <HiCurrencyDollar className="mr-2"></HiCurrencyDollar> Salary:{" "}
+            {salary}
+          </p>
         </div>
         <button className="text-left bg-purple-600 text-white px-4 py-2 w-[130px] rounded">
           View Details
