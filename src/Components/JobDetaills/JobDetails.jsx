@@ -12,7 +12,7 @@ const JobDetails = () => {
   console.log(job);
 
   const handleApplyNow = () => {
-    SaveJobApplication(id);
+    SaveJobApplication(idInt);
     toast.success("You have applied for this job", {
       position: "top-center",
       autoClose: 1000,
